@@ -11,45 +11,58 @@ html {
 
 /************Header ******************/
 
-header {
+.container-header {
     background-color: rgba(128, 128, 128, 0.699);
     display: flex;
     justify-content: space-between;
-    height: 100px;
+    /* flex-wrap: wrap; */
+    width: 100%; /*
+    margin: 0 auto;
+    padding: 1rem; */
 }
 
 .titulo-principal {
-    font-size: 4rem;
-    padding-left: 3rem;
-    padding-top: 1rem;
+    font-size: 3rem;
+    padding-left: 2rem;
     text-decoration: underline;
 }
 
+.nav-listado-principal {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; */
+    padding: 1rem 1.5rem;
+    border-radius: 0.4rem;
+}
+
 .listado-nav {
+    font-size: 2rem;
     list-style: none;
-    font-size: 3rem;
     display: flex;
-    gap: 8rem;
-    padding-top: 5rem;
+    gap: 7rem;
 }
 
-.nav-listado-principal ul li a {
+.listado-nav li a {
     color: black;
+} 
+
+.nav-listado-principal label img {
+    height: 24px;
+    width: 24px;
 }
 
-.logos-header {
-    padding-right: 5rem;
-}
-
-.logos-header img {
-    width: 60px;
-    height: 60px;
-}
-
-.nav-listado-principal #toggle, .nav-listado-principal label {
+.nav-listado-principal #toggle, nav label {
     display: none;
 }
 
+.logos-header {
+    padding-right: 2rem;
+}
+
+.logos-header img {
+    margin: 5px;
+}
 
 /************************* Main  ***************************/
 
@@ -410,26 +423,26 @@ footer {
 
     /**************** Header  *******************/
 
-        .titulo-principal {
-            font-size: 2.5rem;
-            padding-top: 20px;
-        }
+    .titulo-principal {
+        font-size: 2.5rem;
+        padding-top: 1rem;
+    }
 
-        .listado-nav {
-            gap: 4rem;
-            font-size: 2rem;
-        }
+    .listado-nav {
+        font-size: 2rem;
+        gap: 5rem;
+    }
 
-        .logos-header {
-            display: flex;
-            flex-direction: row;
-            padding-top: 10px;
-        }
+    .logos-header {
+        display: flex;
+        flex-direction: row;
+        padding-right: 1.5rem;
+    }
 
-        .logos-header img {
-            width: 40px;
-            height: 40px;
-        }
+    .logos-header img {
+        width: 40px;
+        height: 40px;
+    }
 
     /**************** Main ***********************/
         .container-div-index {
@@ -498,18 +511,14 @@ footer {
     /******************* Header ********************/
 
     .titulo-principal {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        text-align: center;
     }
 
     .listado-nav {
+        font-size: 1.5rem;
         gap: 3rem;
     }
-
-    .logos-header {
-        display: flex;
-        justify-items: flex-end;
-    }
-
 
     /******************* Main  **********************/
 
@@ -558,22 +567,51 @@ footer {
     /******************* Header  ********************/
 
     .titulo-principal {
-        font-size: 12px;
-        text-align: center;
+        order: 2;
+        font-size: 2rem;
+        padding: 0.4rem;
     }
 
     .listado-nav {
-        flex-direction: row;
-        gap: 10px;
+        order: 1;
+        gap: 1rem;
     }
 
-    .listado-nav li a{
-        font-size: 1rem;
+    .logos-header {
+        order: 3;
+        padding: 0.2rem 0.5rem 1rem 0.5rem;
     }
 
     .logos-header img {
-        width: 2rem;
-        height: 2rem;
+        width: 30px;
+        height: 30px;
+        margin: 0.5px;
+    }
+
+    .nav-listado-principal {
+        padding: 0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .nav-listado-principal .menu {
+        /* width: 100%; */
+        height: 0;
+        overflow: hidden;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+
+    .nav-listado-principal label {
+        display: inline-flex;
+        color:  white;
+        cursor: pointer;
+    }
+
+    .nav-listado-principal #toggle:checked ~ .menu {
+        height: 25vh;
     }
 
     /******************* Main    ********************/
