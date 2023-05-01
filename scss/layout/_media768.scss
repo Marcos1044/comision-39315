@@ -18,7 +18,7 @@
     .listado-navbar-header {
         ul {
            display: flex;
-           gap: 20px;
+           gap: 10px;
            margin: 10px;
            li {
             margin: 10px;
@@ -45,6 +45,10 @@
         }
     }
 
+    .item2, .item3 {
+        margin: 14px;
+    }
+
     .item4, .item5 {
         margin: 15px;
     }
@@ -53,11 +57,23 @@
         display: grid;
         grid-template-columns: repeat(12,1fr);
         grid-template-rows: repeat(6,1fr);
+        width: 100%;
         div {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
+    }
+
+   .imagenes-secundarios {
+        button {
+            width: auto;
+            a {
+                font-size: 1rem;
+                text-decoration: none;
+                margin: 5px;
+            }
+        }    
     }
 
     .titulo-tienda {
@@ -148,6 +164,20 @@
         }
     }
 
+    
+//*************************Main-Galeria************************//
+
+    .imagenes-galeria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 5px;
+        img {
+            width: 25rem;
+            height: 25rem;
+        }
+    }
+
 
 
 /********************** Nosotros *************************/
@@ -173,74 +203,55 @@
 /******************* Footer  *****************************/
 
 footer {
-    background-color:  rgba(128, 128, 128, 0.699);
     display: flex;
     justify-content: space-between;
-}
+    flex-direction: row;
+    justify-content: space-between;
 
-.titulo-terciario {
-    font-size: 2.5rem;
-    padding-left: 10px;
-}
-
-    //*************************Main-Galeria************************//
-
-    .imagenes-galeria {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 5px;
-        img {
-            width: 25rem;
-            height: 25rem;
-        }
-    }
-
-
-    //*************************Footer*******************//
-    footer {
-        flex-direction: row;
-        justify-content: space-between;
-
-        .listado-contactanos {
-            padding-bottom: 1.8rem;
-            padding-top: 1rem ;
-            nav {
-                ul {
-                    li {
-                        font-size: 14px;
-                        margin: 5px;
-                    }
-                }
-            }
-        }
-
-        .titulo-terciario-contactos {
-            padding-left: 19rem;
-        }
-
-        .logos-footer {
-            padding-bottom: 12rem;
-            h3 {
-                padding-right: 10px;
-            }
-            div {
-                img {
-                    height: 40px;
-                    width: 40px;
+    .listado-contactanos {
+        padding-bottom: 1.8rem;
+        padding-top: 1rem ;
+        nav {
+            ul {
+                li {
+                    font-size: 14px;
                     margin: 5px;
                 }
             }
         }
     }
 
-    .nav-listado-secundario {
-        ul {
-            padding-left: 0;
-        }
+    .titulo-terciario-contactos {
+        padding-left: 19rem;
     }
 
-    .listado-contactanos {
-        padding-left: 1.4rem;
+    .logos-footer {
+        padding-bottom: 12rem;
+        h3 {
+            padding-right: 10px;
+        }
+        div {
+            img {
+                height: 40px;
+                width: 40px;
+                margin: 5px;
+            }
+        }
     }
+}
+
+    .titulo-terciario {
+        font-size: 2.5rem;
+        padding-left: 10px;
+    }
+
+    .nav-listado-secundario {
+            ul {
+                padding-left: 0;
+            }
+        }
+
+    .listado-contactanos {
+            padding-left: 1.4rem;
+        }
 }

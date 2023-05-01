@@ -14,6 +14,7 @@
 
     .listado-navbar-header {
         ul {
+            gap: 20px;
             li {
                 font-size: 2rem;
             }
@@ -24,11 +25,11 @@
         section {
             .cards {
                 img {
-                    height: 20rem;
-                    width: 20rem;
+                    height: 15rem;
+                    width: 15rem;
                 }
                 p {
-                    font-size: 1.3rem;
+                    font-size: 1rem;
                 }
 
                 button {
@@ -41,36 +42,87 @@
     }
 
     .container-div-index {
-        justify-content: space-around;
+        .cards {
+            padding: 5px;
+            margin: 15px;
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+    .container-div-index {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        padding-top: 2rem;
+            .item1 {
+                grid-column-start: 9;
+                grid-column-end: 11;
+                grid-row-start:2 ;
+                grid-row-end: 5;
+            }
+
+            .item2 {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start:1 ;
+                grid-row-end: 5;
+            }
+
+            .item3 {
+                grid-column-start: 3;
+                grid-column-end: 5;
+                grid-row-start:1 ;
+                grid-row-end: 5;
+            }
+
+            .item4 {
+                grid-column-start: 5;
+                grid-column-end: 7;
+                grid-row-start:1 ;
+                grid-row-end: 5;
+            }
+
+            .item5 {
+                grid-column-start: 7;
+                grid-column-end: 9;
+                grid-row-start: 1;
+                grid-row-end: 5;
+            }
     }
 
     .container-secundario {
         h2 {
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
         p {
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
     }
 
     .item1 {
-        order: 5;
-    }
-
-    .item2 {
         order: 1;
     }
 
-    .item3 {
+    .item2 {
         order: 2;
     }
 
-    .item4 {
+    .item3 {
         order: 3;
     }
 
-    .item5 {
+    .item4 {
         order: 4;
+    }
+
+    .item5 {
+        order: 5;
+    }
+
+    .item2, .item3 {
+        margin: 0;
     }
 
     .item4, .item5 {
@@ -131,16 +183,33 @@
             font-size: 3rem;
         }
         div {
-            p {
-                font-size: 1.5rem;
+                margin: 16px;
+                p {
+                    font-size: 1.5rem;
+                }
+
+                
+                button {
+                      a {
+                           font-size: 1.5rem;
+                         }
+                 }    
             }
-        }
     }
 
+
+    // .section-2, .section-3 {
+    //     div {
+    //         margin: 16px;
+    //     }
+    // }
+
     .imagenes-secundarios {
+        height: 380px;
+        width: 225px;
         img {
-            width: 20rem;
-            height: 20rem;
+            width: 22rem;
+            height: 22rem;
         }
     }
 }

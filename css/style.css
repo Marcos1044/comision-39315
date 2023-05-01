@@ -7,7 +7,7 @@ html {
   font-size: 62.5%; }
 
 header {
-  background-color: rgba(128, 128, 128, 0.699); }
+  background-color: rgba(255, 166, 0, 0.74); }
   header h1 {
     font-size: 2rem;
     position: absolute;
@@ -19,8 +19,11 @@ header {
     height: 35px;
     width: 35px; }
 
+.listado-navbar-header li :hover {
+  color: white; }
+
 footer {
-  background-color: rgba(128, 128, 128, 0.699);
+  background-color: rgba(255, 166, 0, 0.74);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,7 +63,7 @@ footer {
     width: 35px; }
 
 main {
-  background-color: rgba(128, 128, 128, 0.075);
+  background-color: rgba(255, 166, 0, 0.274);
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -82,18 +85,30 @@ main {
   font-size: 1.3rem;
   text-align: center; }
 
-.cards p {
-  font-size: 1.2rem;
-  margin: 10px; }
+.cards {
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px gray;
+  margin: 15px; }
+  .cards p {
+    font-size: 1.2rem;
+    margin: 10px; }
+  .cards button {
+    margin: 10px; }
+    .cards button a {
+      margin: 10px;
+      color: black; }
 
-.cards button {
-  margin: 10px; }
-  .cards button a {
-    margin: 10px;
-    color: black; }
+.cards:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); }
+
+.cards {
+  overflow: hidden; }
 
 .container-tienda {
-  background-color: rgba(128, 128, 128, 0.075); }
+  background-color: rgba(255, 166, 0, 0.274); }
 
 .section-1, .section-2, .section-3 {
   display: flex;
@@ -103,13 +118,35 @@ main {
   .section-1 h3, .section-2 h3, .section-3 h3 {
     font-size: 2rem; }
 
-.imagenes-secundarios img {
-  width: 25rem;
-  height: 25rem; }
+.imagenes-secundarios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px gray;
+  margin: 5px; }
+  .imagenes-secundarios img {
+    width: 25rem;
+    height: 25rem; }
+  .imagenes-secundarios p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 16px; }
+  .imagenes-secundarios button {
+    width: 30%; }
+    .imagenes-secundarios button a {
+      color: black;
+      text-decoration: none;
+      font-size: 1.2rem; }
 
-.imagenes-secundarios p {
-  text-align: center;
-  font-size: 1.1rem; }
+.imagenes-secundarios:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); }
+
+.imagenes-secundarios {
+  overflow: hidden; }
 
 main {
   width: 100%; }
@@ -146,7 +183,7 @@ main {
       padding-right: 2rem; }
 
 main {
-  background-color: rgba(128, 128, 128, 0.075); }
+  background-color: rgba(255, 166, 0, 0.274); }
 
 .titulo-galeria {
   text-align: center;
@@ -154,6 +191,13 @@ main {
 
 .imagenes-galeria img {
   width: 100%; }
+
+.imagenes-galeria-2:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); }
+
+.imagenes-galeria {
+  overflow: hidden; }
 
 .div-nosotros {
   display: flex;
@@ -175,6 +219,10 @@ main {
   .formulario-principal-2 label {
     padding-right: 10rem; } }
 
+@media (min-width: 425px) {
+  header h1 {
+    padding-left: 13rem; } }
+
 @media (min-width: 768px) {
   header {
     display: flex; }
@@ -188,7 +236,7 @@ main {
         height: 40px; }
   .listado-navbar-header ul {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     margin: 10px; }
     .listado-navbar-header ul li {
       margin: 10px;
@@ -203,16 +251,25 @@ main {
     font-size: 2.5rem; }
   .item1 p {
     font-size: 1.5rem; }
+  .item2, .item3 {
+    margin: 14px; }
   .item4, .item5 {
     margin: 15px; }
   .section-1, .section-2, .section-3 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr); }
+    grid-template-rows: repeat(6, 1fr);
+    width: 100%; }
     .section-1 div, .section-2 div, .section-3 div {
       display: flex;
       flex-direction: column;
       align-items: center; }
+  .imagenes-secundarios button {
+    width: auto; }
+    .imagenes-secundarios button a {
+      font-size: 1rem;
+      text-decoration: none;
+      margin: 5px; }
   .titulo-tienda {
     grid-column-start: 6;
     grid-column-end: 8;
@@ -270,6 +327,14 @@ main {
     width: 80%; }
   .ul-container-contactanos li {
     margin: 10px; }
+  .imagenes-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px; }
+    .imagenes-galeria img {
+      width: 25rem;
+      height: 25rem; }
   /********************** Nosotros *************************/
   .div-nosotros {
     display: flex;
@@ -284,21 +349,8 @@ main {
     padding: 10px; }
   /******************* Footer  *****************************/
   footer {
-    background-color: rgba(128, 128, 128, 0.699);
     display: flex;
-    justify-content: space-between; }
-  .titulo-terciario {
-    font-size: 2.5rem;
-    padding-left: 10px; }
-  .imagenes-galeria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 5px; }
-    .imagenes-galeria img {
-      width: 25rem;
-      height: 25rem; }
-  footer {
+    justify-content: space-between;
     flex-direction: row;
     justify-content: space-between; }
     footer .listado-contactanos {
@@ -317,6 +369,9 @@ main {
         height: 40px;
         width: 40px;
         margin: 5px; }
+  .titulo-terciario {
+    font-size: 2.5rem;
+    padding-left: 10px; }
   .nav-listado-secundario ul {
     padding-left: 0; }
   .listado-contactanos {
@@ -328,31 +383,68 @@ main {
   header .logos-header img {
     height: 50px;
     width: 50px; }
-  .listado-navbar-header ul li {
-    font-size: 2rem; }
+  .listado-navbar-header ul {
+    gap: 20px; }
+    .listado-navbar-header ul li {
+      font-size: 2rem; }
   main section .cards img {
-    height: 20rem;
-    width: 20rem; }
+    height: 15rem;
+    width: 15rem; }
   main section .cards p {
-    font-size: 1.3rem; }
+    font-size: 1rem; }
   main section .cards button a {
     font-size: 1.3rem; }
+  .container-div-index .cards {
+    padding: 5px;
+    margin: 15px; }
+    .container-div-index .cards p {
+      text-align: center; }
   .container-div-index {
-    justify-content: space-around; }
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding-top: 2rem; }
+    .container-div-index .item1 {
+      grid-column-start: 9;
+      grid-column-end: 11;
+      grid-row-start: 2;
+      grid-row-end: 5; }
+    .container-div-index .item2 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 5; }
+    .container-div-index .item3 {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 5; }
+    .container-div-index .item4 {
+      grid-column-start: 5;
+      grid-column-end: 7;
+      grid-row-start: 1;
+      grid-row-end: 5; }
+    .container-div-index .item5 {
+      grid-column-start: 7;
+      grid-column-end: 9;
+      grid-row-start: 1;
+      grid-row-end: 5; }
   .container-secundario h2 {
-    font-size: 2.5rem; }
-  .container-secundario p {
     font-size: 2rem; }
+  .container-secundario p {
+    font-size: 1.5rem; }
   .item1 {
-    order: 5; }
-  .item2 {
     order: 1; }
-  .item3 {
+  .item2 {
     order: 2; }
-  .item4 {
+  .item3 {
     order: 3; }
-  .item5 {
+  .item4 {
     order: 4; }
+  .item5 {
+    order: 5; }
+  .item2, .item3 {
+    margin: 0; }
   .item4, .item5 {
     margin: 0; }
   .container-contacto-contactanos h3 {
@@ -374,8 +466,15 @@ main {
     margin-right: 25px; }
   .section-1 h3, .section-2 h3, .section-3 h3 {
     font-size: 3rem; }
-  .section-1 div p, .section-2 div p, .section-3 div p {
-    font-size: 1.5rem; }
-  .imagenes-secundarios img {
-    width: 20rem;
-    height: 20rem; } }
+  .section-1 div, .section-2 div, .section-3 div {
+    margin: 16px; }
+    .section-1 div p, .section-2 div p, .section-3 div p {
+      font-size: 1.5rem; }
+    .section-1 div button a, .section-2 div button a, .section-3 div button a {
+      font-size: 1.5rem; }
+  .imagenes-secundarios {
+    height: 380px;
+    width: 225px; }
+    .imagenes-secundarios img {
+      width: 22rem;
+      height: 22rem; } }
