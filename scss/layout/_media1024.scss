@@ -147,6 +147,13 @@
         span {
             font-size: 3rem;
         }
+
+        button {
+            width: 100%;
+            a {
+                font-size: 4rem;
+            }
+        }
     }
 
     //**************************Main-Galeria************************//
@@ -160,12 +167,15 @@
 
     //****************************Main-Nosotros***********************//
 
+     .imagen-nosotros {
+         width: 50%;
+    }
     .div-nosotros {
         h2 {
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
         p {
-            font-size: 2rem;
+            font-size: 1.5rem;
             margin: 10px;
         }
     }
@@ -205,8 +215,9 @@
     // }
 
     .imagenes-secundarios {
-        height: 380px;
-        width: 225px;
+         height: 380px;
+         width: 225px;
+
         img {
             width: 22rem;
             height: 22rem;

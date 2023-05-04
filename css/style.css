@@ -132,8 +132,12 @@ main {
     height: 25rem; }
   .imagenes-secundarios p {
     text-align: center;
-    font-size: 1.2rem;
-    margin: 16px; }
+    font-size: 1.5rem;
+    margin: 10px; }
+  .imagenes-secundarios span {
+    font-size: 1.5rem;
+    color: orange;
+    margin: 10px; }
   .imagenes-secundarios button {
     width: 30%; }
     .imagenes-secundarios button a {
@@ -148,11 +152,17 @@ main {
 .imagenes-secundarios {
   overflow: hidden; }
 
-main {
+.container-main-contacto {
   width: 100%; }
 
-.container-contacto-contactanos h3 {
-  font-size: 2rem; }
+.container-contacto-contactanos {
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .container-contacto-contactanos h3 {
+    font-size: 2rem; }
 
 .ul-container-contactanos {
   list-style: none;
@@ -163,24 +173,32 @@ main {
       height: 3.5rem;
       width: 3.5rem; }
 
-.formulario-principal .formulario-principal-2 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap; }
-  .formulario-principal .formulario-principal-2 label {
-    width: 100%;
-    padding-right: 5rem; }
-  .formulario-principal .formulario-principal-2 span {
-    font-size: 1.5rem; }
-  .formulario-principal .formulario-principal-2 input {
-    width: 100%; }
-  .formulario-principal .formulario-principal-2 button {
-    margin-bottom: 10px;
-    margin-top: 10px; }
-    .formulario-principal .formulario-principal-2 button a {
-      margin: 10px;
-      width: 50%;
-      padding-right: 2rem; }
+.formulario-principal {
+  width: 100%; }
+  .formulario-principal .formulario-principal-2 {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 15px;
+    padding: 10px;
+    border: 2px solid orange; }
+    .formulario-principal .formulario-principal-2 label {
+      display: flex;
+      flex-direction: column;
+      padding: 0; }
+    .formulario-principal .formulario-principal-2 span {
+      font-size: 1.5rem; }
+    .formulario-principal .formulario-principal-2 input {
+      border-radius: 5px;
+      margin: 5px; }
+    .formulario-principal .formulario-principal-2 button {
+      width: 50px;
+      background-color: orange; }
+      .formulario-principal .formulario-principal-2 button a {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: white; }
 
 main {
   background-color: rgba(255, 166, 0, 0.274); }
@@ -199,6 +217,9 @@ main {
 .imagenes-galeria {
   overflow: hidden; }
 
+.imagen-nosotros {
+  width: 100%; }
+
 .div-nosotros {
   display: flex;
   flex-direction: column;
@@ -216,8 +237,10 @@ main {
     padding-left: 2rem; }
   .titulo-terciario-contactos {
     padding-left: 12rem; }
-  .formulario-principal-2 label {
-    padding-right: 10rem; } }
+  .formulario-principal-2 {
+    width: 100%; }
+    .formulario-principal-2 label {
+      padding-right: 10rem; } }
 
 @media (min-width: 425px) {
   header h1 {
@@ -267,9 +290,7 @@ main {
   .imagenes-secundarios button {
     width: auto; }
     .imagenes-secundarios button a {
-      font-size: 1rem;
-      text-decoration: none;
-      margin: 5px; }
+      margin: 15px; }
   .titulo-tienda {
     grid-column-start: 6;
     grid-column-end: 8;
@@ -323,8 +344,7 @@ main {
     grid-row-start: 2;
     grid-row-end: 6; }
   .formulario-principal-2 input {
-    margin: 5px;
-    width: 80%; }
+    margin: 5px; }
   .ul-container-contactanos li {
     margin: 10px; }
   .imagenes-galeria {
@@ -336,16 +356,28 @@ main {
       width: 25rem;
       height: 25rem; }
   /********************** Nosotros *************************/
+  .section-nosotros {
+    display: flex;
+    align-items: center;
+    margin: 50px; }
+  .imagen-nosotros {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px; }
+  .imagen-nosotros:hover {
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d; }
   .div-nosotros {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center; }
   .titulo-nosotros {
-    font-size: 4rem;
-    margin: 5px; }
+    font-size: 3rem; }
   .div-nosotros p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 10px; }
   /******************* Footer  *****************************/
   footer {
@@ -453,13 +485,19 @@ main {
     font-size: 1.5rem; }
   .formulario-principal-2 span {
     font-size: 3rem; }
+  .formulario-principal-2 button {
+    width: 100%; }
+    .formulario-principal-2 button a {
+      font-size: 4rem; }
   .imagenes-galeria img {
     width: 30rem;
     height: 30rem; }
+  .imagen-nosotros {
+    width: 50%; }
   .div-nosotros h2 {
-    font-size: 3rem; }
+    font-size: 2.5rem; }
   .div-nosotros p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 10px; }
   .section-1 div {
     margin-left: 25px;

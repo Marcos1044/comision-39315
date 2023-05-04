@@ -69,9 +69,7 @@
         button {
             width: auto;
             a {
-                font-size: 1rem;
-                text-decoration: none;
-                margin: 5px;
+                margin: 15px;
             }
         }    
     }
@@ -155,7 +153,6 @@
     .formulario-principal-2 {
         input {
             margin: 5px;
-            width: 80%;
         }
     }
     .ul-container-contactanos {
@@ -182,6 +179,25 @@
 
 /********************** Nosotros *************************/
 
+.section-nosotros {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+}
+
+.imagen-nosotros {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.imagen-nosotros:hover {
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+
 .div-nosotros {
     display: flex;
     flex-wrap: wrap;
@@ -190,12 +206,12 @@
 }
 
 .titulo-nosotros {
-    font-size: 4rem;
-    margin: 5px;
+    font-size: 3rem;
+    // margin: 5px;
 }
 
 .div-nosotros p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 10px;
 }
 

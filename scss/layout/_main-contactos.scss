@@ -1,7 +1,13 @@
-main {
+ .container-main-contacto {
     width: 100%;
-}
-.container-contacto-contactanos {
+ }
+
+ .container-contacto-contactanos {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     h3 {
         font-size: 2rem;
     }
@@ -9,42 +15,49 @@ main {
 
 
 .ul-container-contactanos {
-    list-style: none;
-    padding-left: 0;
-    li {
-        font-size: 1.2rem;
-        a {
-            img {
-                height: 3.5rem;
-                width: 3.5rem;
-            }
-        }
-    }
+     list-style: none;
+     padding-left: 0;
+     li {
+         font-size: 1.2rem;
+         a {
+             img {
+                 height: 3.5rem;
+                 width: 3.5rem;
+             }
+         }
+     }
 }
 
 .formulario-principal {
+    width: 100%;
     .formulario-principal-2 {
+        width: auto;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        margin: 15px;
+        padding: 10px;
+        border: 2px solid orange;
         label {
-            width: 100%;
-             padding-right: 5rem;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
         }
         span {
             font-size: 1.5rem;
         }
         input {
-            width: 100%;
+            border-radius: 5px;
+            margin: 5px;
         }
 
         button {
-            margin-bottom: 10px;
-            margin-top: 10px;
-            a{
-                margin: 10px;
-                width: 50%;
-                padding-right: 2rem;
+            width: 50px;
+            background-color: orange;
+            a {
+                font-size: 1.2rem;
+                text-decoration: none;
+                color: white;
             }
         }
     }
