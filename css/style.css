@@ -99,6 +99,9 @@ main {
     .cards button a {
       margin: 10px;
       color: black; }
+  .cards span {
+    color: orange;
+    font-size: 1.2rem; }
 
 .cards:hover img {
   -webkit-transform: scale(1.1);
@@ -426,6 +429,8 @@ main {
     font-size: 1rem; }
   main section .cards button a {
     font-size: 1.3rem; }
+  main section .cards span {
+    font-size: 1rem; }
   .container-div-index .cards {
     padding: 5px;
     margin: 15px; }
@@ -510,9 +515,6 @@ main {
       font-size: 1.5rem; }
     .section-1 div button a, .section-2 div button a, .section-3 div button a {
       font-size: 1.5rem; }
-  .imagenes-secundarios {
-    height: 380px;
-    width: 225px; }
-    .imagenes-secundarios img {
-      width: 22rem;
-      height: 22rem; } }
+  .imagenes-secundarios img {
+    width: 22rem;
+    height: 22rem; } }
